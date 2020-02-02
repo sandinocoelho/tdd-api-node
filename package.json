@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sandinocoelho/tdd-api-node.git"
@@ -15,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/sandinocoelho/tdd-api-node/issues"
   },
-  "homepage": "https://github.com/sandinocoelho/tdd-api-node#readme"
+  "homepage": "https://github.com/sandinocoelho/tdd-api-node#readme",
+  "devDependencies": {
+    "lint-staged": "^10.0.7",
+    "standard": "^14.3.1",
+    "husky": "^4.2.1"
+  }
 }
