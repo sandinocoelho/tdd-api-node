@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/sandinocoelho/tdd-api-node.git"
   },
+  "standard": {
+    "env": ["jest"]
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -21,5 +24,9 @@
     "jest": "^25.1.0",
     "lint-staged": "^10.0.7",
     "standard": "^14.3.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11"
   }
 }
